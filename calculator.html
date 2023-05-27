@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+    
+    <!--Javascript-->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Calculator</h1><br>
+        <form name="form">
+
+            <!--textarea untuk kotak input angka dan menampilkan hasil-->
+            <input class="textarea" name="textarea">
+            <br><br>
+            
+            <!--bagian tombol pada kalkulator-->
+            <table>
+                <tr>
+                    <td><input class="button" type="button" value="7" onclick="baca(7)"></td>
+                    <td><input class="button" type="button" value="8" onclick="baca(8)"></td>
+                    <td><input class="button" type="button" value="9" onclick="baca(9)"></td>
+                    <td><input class="button button-operation" type="button" value="C" onclick="clean()"></td>
+                    <td><input class="button button-operation-backspace" type="button" value="←" onclick="back()"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="4" onclick="baca(4)"></td>
+                    <td><input class="button" type="button" value="5" onclick="baca(5)"></td>
+                    <td><input class="button" type="button" value="6" onclick="baca(6)"></td>
+                    <td><input class="button button-operation" type="button" value="-" onclick="baca(' - ')"></td>
+                    <td><input class="button button-operation" type="button" value="/" onclick="baca(' / ')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="1" onclick="baca(1)"></td>
+                    <td><input class="button" type="button" value="2" onclick="baca(2)"></td>
+                    <td><input class="button" type="button" value="3" onclick="baca(3)"></td>
+                    <td rowspan="2"><input style="height: 106px;" class="button button-operation" type="button" value="+" onclick="baca(' + ')"></td>
+                    <td><input class="button button-operation" type="button" value="X" onclick="baca(' * ')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="0" onclick="baca(0)"></td>
+                    <td><input class="button" type="button" value="00" onclick="baca('00')"></td>
+                    <td><input class="button" type="button" value="." onclick="baca('.')"></td>
+                    <td><input class="button button-operation" type="button" value="=" onclick="hitung()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

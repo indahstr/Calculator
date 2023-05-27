@@ -1,0 +1,71 @@
+/* general style*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Viga;
+}
+
+/*style untuk bagian body*/
+body{
+    background-image: url(sky5.jpg);
+    background-size: cover;
+}
+
+/*style yang digunakan pada kotak kalkulator*/
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgb(214, 181, 228);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px;
+}
+
+/*style judul*/
+.main h1{
+    text-align: center;
+    color: rebeccapurple;
+    text-transform: uppercase;
+}
+
+/*style untuk tombol kalkulator*/
+.button{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 3px;
+    cursor: pointer;
+    border: none;
+    background: rebeccapurple;
+    color: snow;
+    border-style: solid;
+    border-color: rgb(55, 55, 83);
+    border-radius: 25px;
+}
+
+/*style untuk tombol operasi pada kalkulator*/
+.button-operation{
+    background: white;
+    color: rebeccapurple;
+}
+
+.button-operation-backspace{
+    background: white;
+    color: rebeccapurple;
+    padding-bottom: 5px;
+}
+
+
+/*style untuk textarea yang digunakan sebagai kolom input dan menampilkan hasil*/
+.textarea{
+    width: 260px;
+    margin: 4px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    color: #7d608b;
+    border-radius: 25px;
+    text-align: right;
+}

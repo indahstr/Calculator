@@ -10,7 +10,7 @@ Kalkulator ini memungkinkan pengguna untuk melakukan operasi matematika dasar se
 
 ## Pratinjau
 ![Preview Kalkulator](kalkulator.gif)
-*The background image is not owned by me but sourced from Pinterest.
+_*The background image is not owned by me but sourced from Pinterest._
 
 ## Cara Penggunaan
 1. Buka file `calculator.html`.
